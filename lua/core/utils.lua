@@ -9,4 +9,14 @@ M.close_floating = function()
 	end
 end
 
+M.toggle_background = function()
+	local current = vim.o.bg .. ""
+	print(current)
+	if current == "light" then
+		vim.cmd("set background=dark")
+	else
+		vim.cmd("set background=light")
+	end
+end
+
 return M
