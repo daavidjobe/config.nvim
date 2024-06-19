@@ -20,8 +20,13 @@ vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.inccommand = "split"
 vim.opt.cursorline = true
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 999
 vim.opt.hlsearch = true
+vim.opt.wrap = false
+vim.opt.virtualedit = "block"
+vim.opt.inccommand = "split"
+vim.opt.ignorecase = true
+vim.opt.termguicolors = true
 
 vim.api.nvim_create_user_command("BgToggle", utils.toggle_background, {})
 
