@@ -28,6 +28,13 @@ vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 
+vim.opt.tabstop = 2
+vim.opt.softtabstop = -1
+vim.opt.shiftwidth = 2
+vim.opt.autoindent = true
+vim.opt.expandtab = true
+vim.opt.shiftround = true
+
 vim.api.nvim_create_user_command("BgToggle", utils.toggle_background, {})
 
 -- [[ Install `lazy.nvim` plugin manager ]]

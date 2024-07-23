@@ -11,6 +11,11 @@
 -- NOTE: Here is where you install your plugins.
 require("lazy").setup({
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
+	"tpope/vim-fugitive",
+
+	"tpope/vim-dadbod",
+	"kristijanhusak/vim-dadbod-completion",
+	"kristijanhusak/vim-dadbod-ui",
 
 	{
 		"stevearc/oil.nvim",
